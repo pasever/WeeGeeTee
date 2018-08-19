@@ -1,1 +1,1 @@
-# WeeGeeTee
+# Icon
