@@ -1,9 +1,9 @@
 {
-  "name": "icon",
+  "name": "Wee Gee Tee",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "build": "react-scripts build",
     "react": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
@@ -15,14 +15,15 @@
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
+    "create-react-component-folder": "^0.1.25",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0",
-    "create-react-component-folder": "^0.1.25",
+    "nodemon": "^1.18.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4"
   }
 }
