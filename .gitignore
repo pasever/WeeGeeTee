@@ -63,3 +63,7 @@ typings/
 wig.iml
 wig.ipr
 wig.iws
+.DS_Store
+Icon.iml
+Icon.iws
+Icon.ipr
