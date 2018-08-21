@@ -5,14 +5,13 @@ class HomePage extends Component {
   render() {
     return <div>
         <h1>HomePage</h1>
-        <h2>Express +</h2>
-        <h2>React +</h2>
-        <h2>Node +</h2>
-        <h1>Welcome to WEE GEE TEE</h1>
+        <h2>Express + React + Node</h2>
     </div>;
   }
 }
 
 export default HomePage;
+
+
 
 
