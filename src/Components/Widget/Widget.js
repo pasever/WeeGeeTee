@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import CardsList from '../CardsList/index.js';
 //import * as WidgetsDB from '../../data/index.js'
-import './Widget.css';
 import chat from "../../Assets/images/chat.png";
+import './Widget.css';
 
 
 class Widget extends Component {
@@ -12,7 +12,10 @@ class Widget extends Component {
 
     onChatIconClick() {
         // e.preventDefault();
+
+
         console.log("hey i was clicked");
+
     }
 
     render() {
