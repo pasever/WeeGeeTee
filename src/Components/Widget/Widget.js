@@ -1,16 +1,31 @@
 import React, { Component } from 'react';
 import CardsList from '../CardsList/index.js';
-import * as WidgetsDB from '../../data/index.js'
+//import * as WidgetsDB from '../../data/index.js'
 import './Widget.css';
+import chat from "../../Assets/images/chat.png";
+
 
 class Widget extends Component {
-  render() {
-    return <div>
-       <h1>Widget</h1>
-        <CardsList />
-    </div>;
-  }
-}
+    // constructor(props) {
+    //     super(props);
+    // }
 
+    onChatIconClick() {
+        // e.preventDefault();
+        console.log("hey i was clicked");
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Widget</h1>
+                <CardsList />
+                <div>
+                    <a className="chatIcon" onClick={ () => { this.onChatIconClick()} }><img src={ chat } alt="" width="70px" height="70px" /></a>
+                </div>
+            </div>
+        );
+    }
+}
 export default Widget;
 
