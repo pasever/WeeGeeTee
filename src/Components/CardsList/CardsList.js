@@ -3,7 +3,7 @@ import Card from '../Card/index.js'
 import './CardsList.css';
 
 const CardsList = props =>
-    <div>
+    <div className='cards-container'>
         <Card />
     </div>;
 

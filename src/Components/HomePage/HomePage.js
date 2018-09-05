@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CardsList from '../CardsList/index.js';
 import './HomePage.css';
 
 class HomePage extends Component {
@@ -7,7 +6,7 @@ class HomePage extends Component {
     return <div className="homePage">
         <h1>HomePage</h1>
         <h2>Express + React + Node</h2>
-        <CardsList />
+        <h3><a href="/widget">Widgets</a></h3>
     </div>;
   }
 }
