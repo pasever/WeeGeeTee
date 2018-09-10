@@ -12,6 +12,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-help',
         handler: "openwhisk",
+        id: '444324'
     },
     {
         name: 'facebook',
@@ -25,6 +26,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-music',
         handler: "openwhisk",
+        id: '444545454324'
     },
     {
         name: 'facetime',
@@ -38,6 +40,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-marketing',
         handler: "openwhisk",
+        id: '4445355343324'
     },
     {
         name: 'telegram',
@@ -51,6 +54,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-pricing',
         handler: "openwhisk",
+        id: '4443645654654624'
     },
     {
         name: 'phone',
@@ -64,6 +68,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-sales',
         handler: "openwhisk",
+        id: '445385437594354324'
     },
     {
         name: 'text message',
@@ -77,6 +82,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-registrar',
         handler: "openwhisk",
+        id: '444353454353424'
     },
     {
         name: 'whatsapp',
@@ -90,6 +96,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-general',
         handler: "openwhisk",
+        id: '445654644324'
     },
     {
         name: 'twitter',
@@ -103,6 +110,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-chaoticbot',
         handler: "openwhisk",
+        id: '4443253534535345344'
     },
     {
         name: 'skype',
@@ -116,6 +124,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-close',
         handler: "openwhisk",
+        id: '44554353454324'
     },
     {
         name: 'we chat',
@@ -132,6 +141,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-echo',
         handler: "openwhisk",
+        id: '44443744237894237324'
     },
     {
         name: 'line',
@@ -145,6 +155,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-content',
         handler: "openwhisk",
+        id: '444354353453453424'
     },
     {
         name: 'snapchat',
@@ -158,6 +169,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-morehelp',
         handler: "openwhisk",
+        id: '44453453443534534534324'
     },
     {
         name: 'kakao talk',
@@ -171,6 +183,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-support',
         handler: "openwhisk",
+        id: '44443423423423324'
     },
     {
         name: 'reddit pm',
@@ -184,6 +197,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-live',
         handler: "openwhisk",
+        id: '4444343432423432324'
     },
     {
         name: 'google hangout',
@@ -197,6 +211,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-return',
         handler: "openwhisk",
+        id: '44442343432432423324'
     },
     {
         name: 'hip chat',
@@ -210,6 +225,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-proof',
         handler: "openwhisk",
+        id: '4443443432423423424'
     },
     {
         name: 'slack',
@@ -223,6 +239,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-mediator',
         handler: "openwhisk",
+        id: '4443555344353424'
     },
     {
         name: 'IM',
@@ -236,6 +253,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-purchase',
         handler: "openwhisk",
+        id: '44443343443343324'
     },
     {
         name: 'messanger',
@@ -249,6 +267,7 @@ const objStore =  [
         priority: '1',
         handle: 'cb-dev-payor',
         handler: "openwhisk",
+        id: '45345345345345345344324'
     }
 ];
 

@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from '../Card/index.js'
 import './CardsList.css';
 
 
 const CardsList = props =>
     <div className="cards-container">
-        { console.log(props) }
-        <Card
-          onWidgetClick={ props.onWidgetClick }
-        />
+        {props.widgets.map( widget =>
+            <Card
+              onWidgetClick={ props.onWidgetClick }
+              key={ widget.id }
+              id={ widget.id }
+              widget = { widget }
+            />
+        )}
     </div>;
 
 export default CardsList;
