@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import Card from '../Card/index.js'
 import './CardsList.css';
 
-class CardsList extends Component {
-    render() {
-        return (
-            <div className="cards-container">
-                <Card />
-            </div>
-        );
-    }
-}
+
+const CardsList = props =>
+    <div className="cards-container">
+        { console.log(props) }
+        <Card
+          onWidgetClick={ props.onWidgetClick }
+        />
+    </div>;
 
 export default CardsList;

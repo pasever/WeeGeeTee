@@ -1,5 +1,16 @@
 .card-input {
-    width: 10rem;
     margin: 0.25rem;
     padding: 0.25rem;
+}
+
+form {
+    margin: 1rem;
+    text-align: center;
+}
+.button {
+    padding: 0.3rem;
+    color: darkblue;
+    border-radius: 3px;
+    width: 50px;
+    background-color: antiquewhite;
 }
