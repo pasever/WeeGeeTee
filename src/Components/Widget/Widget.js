@@ -5,17 +5,19 @@ import chat from "../../Assets/images/chat.png";
 import './Widget.css';
 
 
+
 class Widget extends Component {
     constructor(props) {
         super(props);
         this.state = {
             widgets: WidgetsDB,
             error: null,
-            currentWidget: null
+            currentWidget: null,
+            activeIcons: [],
+            currentInput: ''
         };
-
         this.onWidgetClick = this.onWidgetClick.bind(this);
-
+        this.updateSearch = this.updateSearch.bind(this);
     }
 
     onChatIconClick() {
@@ -24,6 +26,10 @@ class Widget extends Component {
 
     generateNewWidget () {
         console.log(this.state.currentWidget);
+    }
+
+    updateSearch() {
+        this.setState({ currentInput: this.event.target.value });
     }
 
     onWidgetClick (event) {
@@ -40,10 +46,14 @@ class Widget extends Component {
                 <h1>Widget</h1>
                 <CardsList
                     onWidgetClick = { this.onWidgetClick }
-                    widgets={ this.state.widgets }
+                    widgets = { this.state.widgets }
+                    updateSearch = { this.updateSearch }
                 />
                 <div className="chatIconList">
-                    <a className="chatIcon" onClick={ () => { this.onChatIconClick()} }><img src={ chat } alt="" width="70px" height="70px" /></a>
+                    { this.state.activeIcons.length > 0 ? ( <p>Hey </p>)  : ( null ) }
+                    <a className="chatIcon" onClick={ () => { this.onChatIconClick()} }>
+                        <img src={ chat } alt="" width="70px" height="70px" />
+                    </a>
                 </div>
             </div>
         );

@@ -11,6 +11,7 @@ const CardsList = props =>
               key={ widget.id }
               id={ widget.id }
               widget = { widget }
+              updateSearch = { this.updateSearch }
             />
         )}
     </div>;

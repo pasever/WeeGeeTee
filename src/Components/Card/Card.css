@@ -14,3 +14,7 @@ form {
     width: 50px;
     background-color: antiquewhite;
 }
+
+.card-checkbox {
+    margin: auto 1rem;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Card.css'
+import email from '../../Assets/images/email.svg';
 
 class Card extends Component {
 
@@ -7,12 +8,17 @@ class Card extends Component {
     render() {
         return <div>
         <form className="card">
-            {/*<img className="card-img" src="" alt="email">*/}
+            <img src={ email } className="card-img" alt="" />
             <div className="card-container">
                 { this.props.widget.name.toUpperCase() }
                 <input type="checkbox" className="card-checkbox"/>
             </div>
-            <input name="email" className="card-input" placeholder="example@example.com" />
+            <input
+                name={ this.props.widget.name }
+                className="card-input"
+                placeholder="example@example.com"
+                onChange={ this.props.updateSearch }
+            />
             <button type="submit" className="button"
                     onClick = { this.props.onWidgetClick }
                     value={ this.props.widget.name }
