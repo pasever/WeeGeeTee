@@ -16,8 +16,8 @@ class Widget extends Component {
             activeIcons: [],
             currentInput: ''
         };
+        // this.updateSearch = this.updateSearch.bind(this);
         this.onWidgetClick = this.onWidgetClick.bind(this);
-        this.updateSearch = this.updateSearch.bind(this);
     }
 
     onChatIconClick() {
@@ -28,14 +28,16 @@ class Widget extends Component {
         console.log(this.state.currentWidget);
     }
 
-    updateSearch() {
-        this.setState({ currentInput: this.event.target.value });
+    onInputChange(event) {
+        this.setState({ currentInput: event });
+        console.log(this.state);
     }
 
     onWidgetClick (event) {
         event.preventDefault();
-        console.log(event.target);
+        console.log(event.target.value);
         this.setState({ currentWidget: event.target.value });
+        this.state.activeIcons.push(event.target.value);
         this.generateNewWidget();
     }
 
@@ -47,7 +49,7 @@ class Widget extends Component {
                 <CardsList
                     onWidgetClick = { this.onWidgetClick }
                     widgets = { this.state.widgets }
-                    updateSearch = { this.updateSearch }
+                    onInputChange = { this.onInputChange.bind(this) }
                 />
                 <div className="chatIconList">
                     { this.state.activeIcons.length > 0 ? ( <p>Hey </p>)  : ( null ) }

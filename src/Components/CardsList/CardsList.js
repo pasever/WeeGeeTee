@@ -11,7 +11,7 @@ const CardsList = props =>
               key={ widget.id }
               id={ widget.id }
               widget = { widget }
-              updateSearch = { this.updateSearch }
+              onInputChange = { props.onInputChange }
             />
         )}
     </div>;

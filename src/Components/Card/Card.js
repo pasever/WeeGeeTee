@@ -4,6 +4,9 @@ import email from '../../Assets/images/email.svg';
 
 class Card extends Component {
 
+    onInputChange(event) {
+        this.props.onInputChange(event.target.value);
+    }
 
     render() {
         return <div>
@@ -17,7 +20,7 @@ class Card extends Component {
                 name={ this.props.widget.name }
                 className="card-input"
                 placeholder="example@example.com"
-                onChange={ this.props.updateSearch }
+                onChange={ this.onInputChange.bind(this) }
             />
             <button type="submit" className="button"
                     onClick = { this.props.onWidgetClick }
