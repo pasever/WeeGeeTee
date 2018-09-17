@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CardsList from '../CardsList/index.js';
 import WidgetsDB from '../../data/index.js'
 import chat from "../../Assets/images/chat.png";
+import axios from 'axios';
 import './Widget.css';
 
 
@@ -21,11 +22,26 @@ class Widget extends Component {
     }
 
     onChatIconClick() {
-
+        console.log(this.state.currentWidget);
     }
 
     generateNewWidget () {
-        console.log(this.state.currentWidget);
+
+        const widgetToAdd = {
+            platform: this.state.currentWidget,
+               input: this.state.currentInput
+        };
+        console.log(widgetToAdd);
+
+        // axios.post('http://localhost:4000/new', widgetToAdd)
+        // .then(response => {
+        //     console.log(response);
+        // })
+        // .catch(error => {
+        //     console.log(error);
+        // });
+
+
     }
 
     onInputChange(event) {
@@ -44,8 +60,7 @@ class Widget extends Component {
     render() {
         return (
             <div>
-                { console.log( this.state) }
-                <h1>Widget</h1>
+                <h1>Widgets: </h1>
                 <CardsList
                     onWidgetClick = { this.onWidgetClick }
                     widgets = { this.state.widgets }

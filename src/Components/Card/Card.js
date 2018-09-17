@@ -16,16 +16,18 @@ class Card extends Component {
                 { this.props.widget.name.toUpperCase() }
                 <input type="checkbox" className="card-checkbox"/>
             </div>
-            <input
-                name={ this.props.widget.name }
-                className="card-input"
-                placeholder="example@example.com"
-                onChange={ this.onInputChange.bind(this) }
-            />
-            <button type="submit" className="button"
-                    onClick = { this.props.onWidgetClick }
-                    value={ this.props.widget.name }
-            >Add</button>
+            <div className="card-data">
+                <input
+                    name={ this.props.widget.name }
+                    className="card-input"
+                    placeholder="example@example.com"
+                    onChange={ this.onInputChange.bind(this) }
+                />
+                <button type="submit" className="button"
+                        onClick = { this.props.onWidgetClick }
+                        value={ this.props.widget.name }
+                >Add</button>
+            </div>
         </form>
         </div>;
       }
